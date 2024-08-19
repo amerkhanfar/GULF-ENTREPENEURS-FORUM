@@ -7520,6 +7520,21 @@ html.tablet .ui-to-top {
   padding: 0;
 }
 
+
+@media (max-width: 991.98px) {
+  section.section-sm:first-of-type,
+  section.section-md:first-of-type,
+  section.section-lg:first-of-type,
+  section.section-xl:first-of-type,
+  section.section-xxl:first-of-type {
+    padding-top: 40px;
+  }
+
+  .rd-navbar-fixed .rd-navbar-brand img {
+    max-width: 100px;
+  }
+}
+
 .rd-navbar-fixed .rd-navbar-search-toggle span,
 .rd-navbar-fixed .rd-navbar-search-toggle span::before,
 .rd-navbar-fixed .rd-navbar-search-toggle span::after {
