@@ -498,6 +498,10 @@ html [class*="section-"].section-bottom-0 {
   section.section-xxl:first-of-type {
     padding-top: 40px;
   }
+
+  .rd-navbar-fixed .rd-navbar-brand img {
+    max-width: 100px;
+  }
 }
 
 @media (min-width: 768px) {
