@@ -111,12 +111,32 @@
                 <!-- Rd Navbar Navigation-->
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap">
-                    <ul class="rd-navbar-nav">
+                    <ul class="rd-navbar-nav" style="margin-right: 146px">
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="speakers.html">Speakers</a>
+                        <a class="rd-nav-link" href="index.html">Home</a>
+                      </li>
+
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html#about">About</a>
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="schedule.html">Schedule</a>
+                        <a class="rd-nav-link" href="index.html#speakers"
+                          >Speakers</a
+                        >
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html#schedule"
+                          >Schedule</a
+                        >
+                      </li>
+
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="gallery.html">Media</a>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html#register"
+                          >Register</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -124,20 +144,47 @@
                 <!-- RD Navbar Collapse-->
                 <div class="rd-navbar-collapse">
                   <a
-                    class="button button-primary"
-                    href="contact.html"
+                    class="ribbon"
+                    href="https://fgccc.org/"
+                    target="_blank"
                     data-triangle=".button-overlay"
-                    ><span>REGISTER</span><span class="button-overlay"></span
+                  >
+                    <div
+                      class="sponsor-overlay"
+                      style="
+                        border-top-width: 216.188px;
+                        border-left-width: 270px;
+                      "
+                    ></div>
+                    <span style="font-weight: bold">ORGANISED BY</span>
+
+                    <div class="sponsor-img">
+                      <img
+                        src="images/organised-by.png"
+                        alt=""
+                        width="90"
+                        height="70"
+                      /></div
                   ></a>
                 </div>
               </div>
             </div>
+
+            <a
+              class="language"
+              href="#"
+              target="_blank"
+              data-triangle=".button-overlay"
+            >
+              <span style="font-weight: bold">ARABIC</span>
+            </a>
           </nav>
         </div>
       </header>
       <!-- Section Swiper Slider-->
       <section
-        class="section section-swiper-absoulte context-dark text-center wow fadeIn"
+        class="section section-swiper-absoulte context-dark text-center wow fadeIn swwiper"
+        id="home"
       >
         <!-- Waves-->
 
@@ -149,10 +196,13 @@
                 <div
                   class="badge-promo wow fadeScale"
                   data-wow-delay=".6s"
-                  style="margin: 10px 0px"
+                  style="margin: 10px 0px; visibility: hidden"
                 >
-                  <span class="badge-promo-text">Fujairah, UAE</span>
+                  <span style="visibility: hidden" class="badge-promo-text"
+                    >Fujairah, UAE</span
+                  >
                   <svg
+                    style="visibility: hidden"
                     class="badge-promo-icon"
                     width="319"
                     height="49"
@@ -176,14 +226,14 @@
                   </svg>
                 </div>
 
-                <h1
+                <h2
                   class="wow fadeScale"
                   data-caption-animate="fadeInUp"
                   data-caption-delay="100"
                   data-caption-duration="900"
                 >
                   GULF ENTREPENEURS FORUM
-                </h1>
+                </h2>
                 <!-- List Inline-->
                 <ul
                   class="list-inline list-inline-md wow"
@@ -203,7 +253,17 @@
                         <h5 class="text-spacing-100">
                           <span class="big">
                             <time datetime="2024-01-05"
-                              >21 - 22 November 2024</time
+                              >21 - 22 November 2024 -</time
+                            ></span
+                          >
+                        </h5>
+                      </div>
+
+                      <div class="unit-body">
+                        <h5 class="text-spacing-100">
+                          <span class="big">
+                            <time datetime="2024-01-05"
+                              >Fujairah, UAE</time
                             ></span
                           >
                         </h5>
@@ -268,8 +328,80 @@
         </div>
       </section>
 
+      <!-- Section Book Your Ticket-->
+      <section
+        class="parallax-container section"
+        data-parallax-img="images/bg-parallax-01-1894x1200.jpg"
+      >
+        <div
+          class="parallax-content section-lg context-dark text-center text-lg-left parallax-overlay-gradient-primary"
+        >
+          <div class="container">
+            <div class="row row-30 align-items-center">
+              <div class="col-lg-5">
+                <h6>The Clock is Ticking</h6>
+                <h3>Event Starts Soon!</h3>
+              </div>
+              <div class="col-lg-7 text-lg-right">
+                <!-- Countdown rectangle-->
+                <div
+                  class="countdown countdown-classic"
+                  data-countdown="data-countdown"
+                  data-to="2024-11-21"
+                >
+                  <div
+                    class="countdown-block wow fadeScale countdown-block-days"
+                    data-wow-delay="0s"
+                  >
+                    <div class="countdown-wrap">
+                      <div class="countdown-title">dys</div>
+                      <div class="countdown-counter" data-counter-days="">
+                        00
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="countdown-block wow fadeScale countdown-block-hours"
+                    data-wow-delay="0.125s"
+                  >
+                    <div class="countdown-wrap">
+                      <div class="countdown-title">hrs</div>
+                      <div class="countdown-counter" data-counter-hours="">
+                        00
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="countdown-block wow fadeScale countdown-block-minutes"
+                    data-wow-delay="0.25s"
+                  >
+                    <div class="countdown-wrap">
+                      <div class="countdown-title">min</div>
+                      <div class="countdown-counter" data-counter-minutes="">
+                        00
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="countdown-block wow fadeScale countdown-block-seconds"
+                    data-wow-delay="0.375s"
+                  >
+                    <div class="countdown-wrap">
+                      <div class="countdown-title">sec</div>
+                      <div class="countdown-counter" data-counter-seconds="">
+                        00
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Section Biggest 2024 Digital Conference-->
-      <section class="section section-lg bg-default wow fadeIn">
+      <section class="section section-lg bg-default wow fadeIn" id="about">
         <div class="container">
           <div class="row row-30 justify-content-center">
             <div class="col-md-10 col-lg-6 col-xl-5">
@@ -365,79 +497,8 @@
         </div>
       </section>
 
-      <!-- Section Book Your Ticket-->
-      <section
-        class="parallax-container section"
-        data-parallax-img="images/bg-parallax-01-1894x1200.jpg"
-      >
-        <div
-          class="parallax-content section-lg context-dark text-center text-lg-left parallax-overlay-gradient-primary"
-        >
-          <div class="container">
-            <div class="row row-30 align-items-center">
-              <div class="col-lg-5">
-                <h6>The Clock is Ticking</h6>
-                <h3>Event Starts Soon!</h3>
-              </div>
-              <div class="col-lg-7 text-lg-right">
-                <!-- Countdown rectangle-->
-                <div
-                  class="countdown countdown-classic"
-                  data-countdown="data-countdown"
-                  data-to="2024-11-21"
-                >
-                  <div
-                    class="countdown-block wow fadeScale countdown-block-days"
-                    data-wow-delay="0s"
-                  >
-                    <div class="countdown-wrap">
-                      <div class="countdown-title">dys</div>
-                      <div class="countdown-counter" data-counter-days="">
-                        00
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="countdown-block wow fadeScale countdown-block-hours"
-                    data-wow-delay="0.125s"
-                  >
-                    <div class="countdown-wrap">
-                      <div class="countdown-title">hrs</div>
-                      <div class="countdown-counter" data-counter-hours="">
-                        00
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="countdown-block wow fadeScale countdown-block-minutes"
-                    data-wow-delay="0.25s"
-                  >
-                    <div class="countdown-wrap">
-                      <div class="countdown-title">min</div>
-                      <div class="countdown-counter" data-counter-minutes="">
-                        00
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="countdown-block wow fadeScale countdown-block-seconds"
-                    data-wow-delay="0.375s"
-                  >
-                    <div class="countdown-wrap">
-                      <div class="countdown-title">sec</div>
-                      <div class="countdown-counter" data-counter-seconds="">
-                        00
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- Section Who Is Speaking-->
-      <section class="section section-md bg-gray-100 text-center">
+      <section class="section section-md bg-gray-100 text-center" id="speakers">
         <div class="container">
           <div
             class="row row-30 justify-content-center justify-content-lg-between"
@@ -651,7 +712,7 @@
         </div>
       </section>
       <!-- Section Conference Schedule-->
-      <section class="section section-lg bg-default text-center">
+      <section class="section section-lg bg-default text-center" id="schedule">
         <div class="container">
           <h6>Event Schedule plan</h6>
           <h3>Conference Schedule.</h3>
@@ -665,7 +726,7 @@
                   data-toggle="tab"
                   data-triangle=".nav-link-overlay"
                   ><span class="nav-link-overlay"></span
-                  ><span class="nav-link-cite">First Day</span
+                  ><span class="nav-link-cite">Day 1</span
                   ><span class="nav-link-title">November 21, 2024</span></a
                 >
               </li>
@@ -676,7 +737,7 @@
                   data-toggle="tab"
                   data-triangle=".nav-link-overlay"
                   ><span class="nav-link-overlay"></span
-                  ><span class="nav-link-cite">Second Day</span
+                  ><span class="nav-link-cite">Day 2</span
                   ><span class="nav-link-title">November 22, 2024</span></a
                 >
               </li>
@@ -2162,6 +2223,7 @@
       <section
         class="parallax-container section"
         data-parallax-img="images/bg-parallax-03-1894x1662.jpg"
+        id="partners"
       >
         <div
           class="parallax-content section-lg context-dark text-center parallax-overlay-gradient-primary"
@@ -2177,11 +2239,11 @@
                       href="#"
                       data-triangle=".sponsor-overlay"
                     >
-                      <h6 style="color: black; margin-bottom: 20px">
-                        Organised By
-                      </h6>
                       <div class="sponsor-overlay"></div>
                       <div class="sponsor-img">
+                        <h6 style="color: black; margin-bottom: 20px">
+                          Organised By
+                        </h6>
                         <img
                           src="images/organised-by.png"
                           alt=""
@@ -2244,7 +2306,7 @@
       </section>
 
       <!-- Section Newsletter Sign Up-->
-      <section class="parallax-container section">
+      <section class="parallax-container section" id="register">
         <div class="parallax-content section-lg text-center">
           <div class="container">
             <h6>REGISTER NOW</h6>
@@ -2303,125 +2365,6 @@
                     </button>
                   </div>
                 </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section Photo Gallery-->
-      <section>
-        <div class="parallax-content section-lg context-dark text-center">
-          <div class="container container-wide">
-            <h6 style="color: black">event album</h6>
-            <h3 style="color: black">Photo Gallery.</h3>
-            <div
-              class="row row-ten row-narrow row-30 row-lg-50 justify-content-center"
-              data-lightgallery="group"
-            >
-              <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="wow">
-                  <div>
-                    <!-- Gallery Thumbnail--><a
-                      class="thumbnail"
-                      href="images/gallery-01-original-1200x800.jpg"
-                      data-lightgallery="item"
-                      data-triangle=".thumbnail-overlay"
-                      ><span class="thumbnail-overlay"></span
-                      ><span class="thumbnail-icon"></span
-                      ><img
-                        src="images/gallery-01-298x343.jpg"
-                        alt=""
-                        width="298"
-                        height="343"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="wow">
-                  <div>
-                    <!-- Gallery Thumbnail--><a
-                      class="thumbnail"
-                      href="images/gallery-02-original-1200x800.jpg"
-                      data-lightgallery="item"
-                      data-triangle=".thumbnail-overlay"
-                      ><span class="thumbnail-overlay"></span
-                      ><span class="thumbnail-icon"></span
-                      ><img
-                        src="images/gallery-02-298x343.jpg"
-                        alt=""
-                        width="298"
-                        height="343"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="wow">
-                  <div>
-                    <!-- Gallery Thumbnail--><a
-                      class="thumbnail"
-                      href="images/gallery-03-original-1200x800.jpg"
-                      data-lightgallery="item"
-                      data-triangle=".thumbnail-overlay"
-                      ><span class="thumbnail-overlay"></span
-                      ><span class="thumbnail-icon"></span
-                      ><img
-                        src="images/gallery-03-298x343.jpg"
-                        alt=""
-                        width="298"
-                        height="343"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="wow">
-                  <div>
-                    <!-- Gallery Thumbnail--><a
-                      class="thumbnail"
-                      href="images/gallery-04-original-1200x800.jpg"
-                      data-lightgallery="item"
-                      data-triangle=".thumbnail-overlay"
-                      ><span class="thumbnail-overlay"></span
-                      ><span class="thumbnail-icon"></span
-                      ><img
-                        src="images/gallery-04-298x343.jpg"
-                        alt=""
-                        width="298"
-                        height="343"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="wow">
-                  <div>
-                    <!-- Gallery Thumbnail--><a
-                      class="thumbnail"
-                      href="images/gallery-05-original-1200x800.jpg"
-                      data-lightgallery="item"
-                      data-triangle=".thumbnail-overlay"
-                      ><span class="thumbnail-overlay"></span
-                      ><span class="thumbnail-icon"></span
-                      ><img
-                        src="images/gallery-05-298x343.jpg"
-                        alt=""
-                        width="298"
-                        height="343"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-12">
-                <p class="font-weight-sbold font-secondary">
-                  <span
-                    >Don’t hesitate, contact us for better help and
-                    services.</span
-                  >
-                  <a class="link-inline" href="#">Book Ticket Now</a>
-                </p>
               </div>
             </div>
           </div>
