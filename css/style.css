@@ -15020,6 +15020,10 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   justify-content: center;
 }
 
+.language-nav {
+  display: none !important;
+}
+
 .sponsor-img h6 {
   position: absolute;
   top: 10px;
@@ -15034,5 +15038,9 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 @media (max-width: 900px) {
   .margin-phone {
     margin-top: 50px;
+  }
+
+  .language-nav {
+    display: block !important;
   }
 }
