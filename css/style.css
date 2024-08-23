@@ -15044,6 +15044,10 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   .language-nav {
     display: block !important;
   }
+
+  .social-container {
+    display: none;
+  }
 }
 
 .list-packages li {
