@@ -15036,24 +15036,6 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   height: 100vh;
 }
 
-@media (max-width: 900px) {
-  .margin-phone {
-    margin-top: 50px;
-  }
-
-  .language-nav {
-    display: block !important;
-  }
-
-  .social-container {
-    display: none;
-  }
-}
-
-.list-packages li {
-  font-weight: 700;
-}
-
 .social-container {
   z-index: 5;
   position: fixed;
@@ -15071,4 +15053,22 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   background-color: transparent !important;
   color: black !important;
   background: transparent;
+}
+
+@media (max-width: 900px) {
+  .margin-phone {
+    margin-top: 50px;
+  }
+
+  .language-nav {
+    display: block !important;
+  }
+
+  .social-container {
+    display: none;
+  }
+}
+
+.list-packages li {
+  font-weight: 700;
 }
