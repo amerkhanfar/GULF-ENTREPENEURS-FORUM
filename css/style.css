@@ -15049,3 +15049,22 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 .list-packages li {
   font-weight: 700;
 }
+
+.social-container {
+  z-index: 5;
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20vh;
+  width: 5vw;
+}
+
+.social-container div a {
+  background-color: transparent !important;
+  color: black !important;
+  background: transparent;
+}
