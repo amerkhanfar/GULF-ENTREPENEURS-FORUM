@@ -1966,7 +1966,7 @@ a[href*="mailto"] {
   font-family: "Almarai", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   color: #ffffff;
-  background-color: #26354b;
+  background-color: #554b76;
 }
 
 .block-address a,
@@ -6820,7 +6820,7 @@ html.tablet .ui-to-top {
   display: inline-block;
   font-family: "Almarai", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 600;
   text-transform: uppercase;
@@ -9369,7 +9369,7 @@ button.swiper-pagination-bullet {
   z-index: 0;
   display: block;
   padding: 8px;
-  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Almarai", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -11295,7 +11295,8 @@ body:not(.lg-from-hash)
   display: block;
   white-space: pre;
   padding: 4px 12px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Almarai", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   font-size: 12px;
 }
 
@@ -13667,7 +13668,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 .slick-prev:before,
 .slick-next:before {
-  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Almarai", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   font-size: 20px;
   line-height: 1;
@@ -13763,7 +13764,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   content: "•";
   width: 20px;
   height: 20px;
-  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Almarai", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   font-size: 6px;
   line-height: 20px;
@@ -15043,4 +15044,8 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   .language-nav {
     display: block !important;
   }
+}
+
+.list-packages li {
+  font-weight: 700;
 }
