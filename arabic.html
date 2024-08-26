@@ -2457,7 +2457,6 @@
                       id="contact-name"
                       type="text"
                       name="name"
-                      data-constraints="@Required"
                       required
                     />
                     <label class="form-label" for="contact-name">الاسم</label>
@@ -2468,7 +2467,6 @@
                       id="contact-email"
                       type="email"
                       name="email"
-                      data-constraints="@Email @Required"
                       required
                     />
                     <label class="form-label" for="contact-email"
@@ -2478,13 +2476,12 @@
                   <div class="form-wrap">
                     <input
                       class="form-input"
-                      id="contact-email"
-                      type="number"
-                      name="Phone"
-                      data-constraints="@Email @Required"
+                      id="contact-phone"
+                      type="tel"
+                      name="phone"
                       required
                     />
-                    <label class="form-label" for="contact-email"
+                    <label class="form-label" for="contact-phone"
                       >رقم الهاتف</label
                     >
                   </div>
@@ -2498,29 +2495,29 @@
       <!-- Section We Have Top Executive And Start Up Here-->
       <section
         class="parallax-container section"
-        data-parallax-img="images/Conference-Bg.png"
+        data-parallax-img="images/hilton.png"
       >
         <div class="parallax-content section-lg context-dark text-center">
           <div class="container">
             <div class="row row-30 justify-content-center">
               <div class="col-md-10 col-lg-8">
+                <h5 class="text-secondary wow">
+                  Double Tree by Hilton Fujairah City
+                </h5>
+                <h4 class="wow" style="margin-top: 13px">
+                  سجل في المؤتمر عبر موقعنا الإلكتروني واحصل على رمز خصم لحجزك
+                  القادم!
+                </h4>
                 <a
-                  class="video-link wow fadeScale"
-                  href="https://youtu.be/nbfFDnKkMvw"
-                  target="_blank"
-                >
-                  <div
-                    class="video-link-bg"
-                    data-triangle=".video-link-overlay"
-                  >
-                    <span class="video-link-overlay"></span>
-                  </div>
-                  <span class="icon fa-play"></span
+                  class="button button-primary"
+                  href="index.html#register"
+                  data-triangle=".button-overlay"
+                  ><span>سجل الان</span
+                  ><span
+                    class="button-overlay"
+                    style="border-top-width: 60.5px; border-left-width: 159.5px"
+                  ></span
                 ></a>
-                <h6 class="text-secondary wow" style="letter-spacing: 0">
-                  انقر هنا لمشاهدة الفيديو الترويجي
-                </h6>
-                <h2 class="wow">لدينا أفضل رواد الأعمال</h2>
               </div>
             </div>
           </div>
@@ -2563,10 +2560,12 @@
             </div>
             <div class="col-xs-10 col-sm-6 col-lg-4">
               <h5>
-                <span class="big font-weight-sbold">التحديثات الاجتماعية</span>
+                <span class="big font-weight-sbold" style="text-align: right"
+                  >التحديثات الاجتماعية</span
+                >
               </h5>
               <div class="event-detail">
-                <p class="big">
+                <p class="big" style="text-align: right">
                   قد تتساءل: لماذا هذه الفعالية شائعة جداً؟ إذا كنت مهتماً،
                   <br class="d-none d-xl-block" />
                   يمكنك العثور على مزيد من المعلومات عنها هنا

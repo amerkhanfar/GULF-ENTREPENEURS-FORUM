@@ -2,6 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("#form");
 
   form.addEventListener("submit", async (event) => {
+    // Check if the form is valid
+    if (!form.checkValidity()) {
+      event.preventDefault(); // Prevent the form submission
+      alert("Please fill in all required fields."); // Show an alert
+      return;
+    }
+
     event.preventDefault(); // Prevent the default form submission
 
     // Collect form data
@@ -31,11 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const result = await response.json();
       console.log("Form submitted successfully:", result);
 
-      // Optionally, handle success (e.g., show a success message)
+      // Handle success (e.g., show a success message)
       alert("Your message has been sent successfully!");
     } catch (error) {
       console.error("Error submitting form:", error);
-      // Optionally, handle errors (e.g., show an error message)
+      // Handle errors (e.g., show an error message)
       alert("There was an error sending your message. Please try again.");
     }
   });
