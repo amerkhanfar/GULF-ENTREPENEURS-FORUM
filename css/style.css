@@ -5648,11 +5648,12 @@ textarea.form-input {
 }
 
 .sponsor-ritmo {
-  max-width: 370px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
   border: 2px solid #f4f2ee;
+  display: flex;
 }
 
 .sponsor-ritmo-header {
@@ -15065,6 +15066,14 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   }
 
   .social-container {
+    display: none;
+  }
+  .sponsor-ritmo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .rd-navbar-fixed .rd-navbar-fixed-element-1 {
     display: none;
   }
 }
