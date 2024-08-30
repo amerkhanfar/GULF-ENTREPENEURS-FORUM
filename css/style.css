@@ -15027,6 +15027,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 .sponsor-img h6 {
+  width: 100%;
   position: absolute;
   top: 10px;
   left: 50%;
