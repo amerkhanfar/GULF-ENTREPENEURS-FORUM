@@ -5246,6 +5246,7 @@ textarea.form-input {
   margin-right: auto;
   padding: 20px 20px 25px;
   background-color: #ffffff;
+  min-height: 525px;
 }
 
 .speaker-img {
@@ -15081,4 +15082,18 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 .list-packages li {
   font-weight: 700;
+}
+
+.speaker-image {
+  width: 270px;
+  height: 303px;
+  background-size: cover;
+  background-position: center;
+}
+
+.speakers-image {
+  width: 330px;
+  height: 354px;
+  background-size: cover;
+  background-position: center;
 }
