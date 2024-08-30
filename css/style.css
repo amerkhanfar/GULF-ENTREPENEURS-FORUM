@@ -7274,6 +7274,7 @@ html.tablet .ui-to-top {
 .rd-navbar-fixed .rd-nav-link,
 .rd-navbar-fixed .rd-nav-link:not([href]) {
   color: #8b8b9a;
+  width: 62vw;
 }
 
 .rd-navbar-fixed li.opened > .rd-navbar-dropdown {
