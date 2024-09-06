@@ -113,10 +113,39 @@
                   <div class="rd-navbar-nav-wrap">
                     <ul class="rd-navbar-nav">
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="speakers.html">Speakers</a>
+                        <a class="rd-nav-link" href="index.html">Home</a>
+                      </li>
+
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="about.html">About</a>
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="schedule.html">Schedule</a>
+                        <a class="rd-nav-link" href="index.html#speakers"
+                          >Speakers</a
+                        >
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="index.html#schedule"
+                          >Agenda</a
+                        >
+                      </li>
+
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="sponsors.html">Sponsors</a>
+                      </li>
+
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="become-a-sponsor.html"
+                          >Become a sponsor</a
+                        >
+                      </li>
+
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="gallery.html">Media</a>
+                      </li>
+
+                      <li class="rd-nav-item language-nav">
+                        <a class="rd-nav-link language-nav" href="#">العربية</a>
                       </li>
                     </ul>
                   </div>
@@ -125,27 +154,29 @@
                 <div class="rd-navbar-collapse">
                   <a
                     class="button button-primary"
-                    href="contact.html"
+                    href="index.html#register"
                     data-triangle=".button-overlay"
-                    ><span>REGISTER</span><span class="button-overlay"></span
+                    ><span>Register</span><span class="button-overlay"></span
                   ></a>
                 </div>
               </div>
             </div>
+
+            <a class="language" href="#" data-triangle=".button-overlay">
+              <span style="font-weight: bold; color: #554b76">العربية</span>
+            </a>
           </nav>
         </div>
       </header>
       <!-- Breadcrumbs-->
       <section
         class="breadcrumbs-custom bg-image context-dark"
-        style="background-image: url(images/bg-breadcrumbs-01-1894x424.jpg)"
+        style="background-image: url(images/bg-landscape.png)"
       >
         <div class="container">
-          <ul class="breadcrumbs-custom-path">
-            <li><a href="index.html">Home</a></li>
-            <li class="active">Register</li>
-          </ul>
-          <h3 class="breadcrumbs-custom-title">Register</h3>
+          <h3 class="breadcrumbs-custom-title" style="color: #554b76">
+            Register
+          </h3>
         </div>
       </section>
 
@@ -153,15 +184,18 @@
       <section class="section section-lg bg-default">
         <div class="container">
           <div class="row row-30 justify-content-center">
-            <div class="col-xs-10 col-sm-9 col-md-6 col-lg-7 col-xl-8">
-              <h3>Register</h3>
+            <div
+              class="col-xs-10 col-sm-9 col-md-6 col-lg-7 col-xl-8"
+              style="text-align: center"
+            >
+              <h3>reserve your seat</h3>
               <!--RD Mailform-->
               <form class="rd-mailform rd-form" id="form" method="post">
                 <div class="row row-10 row-narrow-xs">
                   <div class="col-lg-6">
                     <div class="form-wrap">
                       <label class="form-label" for="contact-name"
-                        >Your Name</label
+                        >Full Name</label
                       >
                       <input
                         class="form-input"
@@ -186,20 +220,129 @@
                       />
                     </div>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-lg-6">
                     <div class="form-wrap">
-                      <label class="form-label" for="contact-message"
-                        >Write Message</label
+                      <label class="form-label" for="contact-email"
+                        >Phone Number</label
                       >
-                      <textarea
+                      <input
                         class="form-input"
-                        id="contact-message"
-                        name="message"
-                        data-constraints="@Required"
-                      ></textarea>
+                        id="contact-email"
+                        type="phone"
+                        name="phone"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-email"
+                        >Country</label
+                      >
+                      <input
+                        class="form-input"
+                        id="contact-email"
+                        type="text"
+                        name="country"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-email"
+                        >Company</label
+                      >
+                      <input
+                        class="form-input"
+                        id="contact-email"
+                        type="text"
+                        name="company"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-email"
+                        >Job Title</label
+                      >
+                      <input
+                        class="form-input"
+                        id="contact-email"
+                        type="text"
+                        name="job"
+                      />
                     </div>
                   </div>
                   <div class="col-lg-12">
+                    <div class="form-wrap">
+                      <select class="form-input" name="aaaa" id="aaaa">
+                        <option value="" disabled selected>
+                          You Are Attending As:
+                        </option>
+                        <option
+                          value="Entrepreneur
+                        "
+                        >
+                          Entrepreneur
+                        </option>
+                        <option value="Investor">Investor</option>
+                        <option
+                          value="SME Representative
+                        "
+                        >
+                          SME Representative
+                        </option>
+
+                        <option value="Investor">Industry Expert</option>
+                        <option value="Investor">
+                          Government/Institutional Representative
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-wrap">
+                      <select
+                        class="form-input"
+                        name="package"
+                        id="contact-package"
+                      >
+                        <option value="" disabled selected>
+                          Area Of Interest
+                        </option>
+                        <option
+                          value="Networking
+                        "
+                        >
+                          Networking
+                        </option>
+                        <option
+                          value="Investment Opportunities
+                        "
+                        >
+                          Investment Opportunities
+                        </option>
+                        <option
+                          value="Workshops
+                        "
+                        >
+                          Workshops
+                        </option>
+
+                        <option
+                          value="Panel Discussions
+                        "
+                        >
+                          Panel Discussions
+                        </option>
+                        <option value="Exhibitions">Exhibitions</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-12" style="text-align: center">
                     <div class="form-button">
                       <button
                         class="button button-lg button-primary"
@@ -207,80 +350,12 @@
                         data-triangle=".button-overlay"
                       >
                         <span class="button-overlay"></span
-                        ><span>Send Message</span>
+                        ><span>Register</span>
                       </button>
                     </div>
                   </div>
                 </div>
               </form>
-            </div>
-            <div class="col-xs-10 col-sm-9 col-md-6 col-lg-5 col-xl-4">
-              <div class="block-address">
-                <div class="block-address-item">
-                  <h5 class="block-address-title">Address</h5>
-                  <p class="block-address-text">
-                    FUJAIRAH<br class="d-none d-xs-block" />
-                    UAE
-                  </p>
-                </div>
-                <div class="block-address-item">
-                  <h5 class="block-address-title">Phone</h5>
-                  <p class="block-address-text">
-                    <span>Local:</span> <a href="tel:#">055555555555</a
-                    ><br /><span>Mobile:</span> <a href="tel:#">0555555555</a>
-                  </p>
-                </div>
-                <div class="block-address-item">
-                  <h5 class="block-address-title">Email</h5>
-                  <p class="block-address-text">
-                    <a href="mailto:#">needhelp@something.com</a><br /><a
-                      href="mailto:#"
-                      >needhelp@something.com</a
-                    >
-                  </p>
-                </div>
-                <div class="block-address-item">
-                  <h5 class="block-address-title">Follow</h5>
-                  <ul class="list-inline list-inline-xs">
-                    <li>
-                      <a
-                        class="icon icon-rect icon-xs icon-white fa-facebook"
-                        href="#"
-                        data-triangle=".icon-rect-overlay"
-                      >
-                        <div class="icon-rect-overlay"></div
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="icon icon-rect icon-xs icon-white fa-twitter"
-                        href="#"
-                        data-triangle=".icon-rect-overlay"
-                      >
-                        <div class="icon-rect-overlay"></div
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="icon icon-rect icon-xs icon-white fa-linkedin"
-                        href="#"
-                        data-triangle=".icon-rect-overlay"
-                      >
-                        <div class="icon-rect-overlay"></div
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="icon icon-rect icon-xs icon-white fa-youtube-play"
-                        href="#"
-                        data-triangle=".icon-rect-overlay"
-                      >
-                        <div class="icon-rect-overlay"></div
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -290,16 +365,17 @@
         <!--Please, add the data attribute data-key='YOUR_API_KEY' in order to insert your own API key for the Google map.-->
         <!--Please note that YOUR_API_KEY should replaced with your key.-->
         <!--Example: <div class='google-map-container' data-key='YOUR_API_KEY'>-->
-        <div
-          class="google-map-container"
-          data-center="Central Park, New York, US"
-          data-key="AIzaSyBUPsDPtyZG7EPBB2XDN55Rxt_fYUoc4Ak"
-          data-zoom="15"
-          data-icon="images/gmap_marker.png"
-          data-icon-active="images/gmap_marker_active.png"
-          data-styles='[{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":60}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":30}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ef8c25"},{"lightness":40}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#b6c54c"},{"lightness":40},{"saturation":-40}]},{}]'
-        >
-          <div class="google-map"></div>
+        <div class="google-map-container">
+          <div class="google-map">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3612.456564008834!2d56.3225171!3d25.1202508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef4f908965dfa55%3A0x932a054c097a5455!2sDoubleTree%20by%20Hilton%20Fujairah%20City!5e0!3m2!1sen!2sae!4v1725448308647!5m2!1sen!2sae"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
           <ul class="google-map-markers">
             <li
               data-location="Central Park, New York, US"
@@ -310,7 +386,7 @@
       </section>
 
       <!-- Section Pre Footer-->
-      <section class="section section-lg bg-gray-900">
+      <section class="section section-lg">
         <div class="container">
           <div class="row row-30">
             <div class="col-xs-10 col-lg-4 align-self-center">
@@ -336,9 +412,12 @@
                   >
                 </p>
                 <p class="event-detail-address big" data-splitting>
-                  Fujairah , United Arab Emirates.
+                  Double Tree by Hilton, Fujairah, UAE.
                 </p>
-                <a class="event-detail-link" href="contact.html"
+                <a
+                  class="event-detail-link"
+                  href="https://www.google.com/maps/place/DoubleTree+by+Hilton+Fujairah+City/@25.1202508,56.3225171,17z/data=!4m9!3m8!1s0x3ef4f908965dfa55:0x932a054c097a5455!5m2!4m1!1i2!8m2!3d25.1202508!4d56.325092!16s%2Fg%2F11s75ffs5v?entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
                   >View map location</a
                 >
               </div>
@@ -359,8 +438,8 @@
                       href="#"
                       data-triangle=".icon-rect-overlay"
                     >
-                      <div class="icon-rect-overlay"></div
-                    ></a>
+                      <div class="icon-rect-overlay"></div>
+                    </a>
                   </li>
                   <li data-wow-delay=".35s">
                     <a
@@ -368,8 +447,8 @@
                       href="#"
                       data-triangle=".icon-rect-overlay"
                     >
-                      <div class="icon-rect-overlay"></div
-                    ></a>
+                      <div class="icon-rect-overlay"></div>
+                    </a>
                   </li>
                   <li data-wow-delay=".5s">
                     <a
@@ -377,8 +456,8 @@
                       href="#"
                       data-triangle=".icon-rect-overlay"
                     >
-                      <div class="icon-rect-overlay"></div
-                    ></a>
+                      <div class="icon-rect-overlay"></div>
+                    </a>
                   </li>
                   <li data-wow-delay=".65s">
                     <a
@@ -386,8 +465,8 @@
                       href="#"
                       data-triangle=".icon-rect-overlay"
                     >
-                      <div class="icon-rect-overlay"></div
-                    ></a>
+                      <div class="icon-rect-overlay"></div>
+                    </a>
                   </li>
                 </ul>
               </div>

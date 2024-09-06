@@ -1329,7 +1329,7 @@ html [class*="section-"].section-bottom-0 {
     left: 0;
     top: 50%;
     height: 138px;
-    border-left: 2px solid #f4f2ee;
+    border-left: 2px solid #5c527b;
     transform: translateY(-50%);
   }
 }
@@ -5259,7 +5259,7 @@ textarea.form-input {
 }
 
 .speaker-overlay {
-  border-top-color: #b8d093;
+  border-top-color: transparent;
   transform: scale(0.3);
   transform-origin: right top;
   opacity: 0;
@@ -9931,15 +9931,6 @@ button.swiper-pagination-bullet {
     "Helvetica Neue", Arial, sans-serif;
 }
 
-.card-custom .card-body {
-  padding: 20px 20px 40px;
-  border: 0;
-}
-
-.card-custom .card-body > * + * {
-  margin-top: 20px;
-}
-
 .card-custom .card-title {
   margin-bottom: 0;
 }
@@ -9955,29 +9946,9 @@ button.swiper-pagination-bullet {
   .card-custom:not(:first-child) .card-header .card-title a.collapsed {
     margin-top: 0;
   }
-  .card-custom .card-body {
-    padding: 15px 10px 35px 168px;
-  }
+
   * + .card-group-custom {
     margin-top: 50px;
-  }
-}
-
-@media (min-width: 992px) {
-  .card-custom .card-body {
-    padding: 45px 10px 45px 208px;
-  }
-  .card-custom .card-body > * + * {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .card-custom .card-body {
-    padding: 45px 10px 45px 208px;
-  }
-  .card-custom .card-body > * + * {
-    margin-top: 48px;
   }
 }
 
@@ -13072,7 +13043,6 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   .video-link-wrapper {
     position: absolute;
     right: 30px;
-    bottom: 90px;
   }
   .video-link {
     width: 133px;
@@ -14980,6 +14950,11 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   pointer-events: none;
 }
 
+.map {
+  width: 100vw;
+  height: 100%;
+}
+
 .ribbon {
   --f: 0.5em; /* control the folded part*/
   --r: 0.8em; /* control the ribbon shape */
@@ -15054,9 +15029,9 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 .social-container div a {
-  background-color: transparent !important;
-  color: black !important;
-  background: transparent;
+  background-color: Black !important;
+  color: white !important;
+  background: Black;
 }
 
 @media (max-width: 900px) {
@@ -15097,4 +15072,12 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   height: 354px;
   background-size: cover;
   background-position: center;
+}
+
+.counter {
+  color: rgb(85, 75, 118);
+}
+
+.box-counter-main div {
+  color: rgb(85, 75, 118);
 }
