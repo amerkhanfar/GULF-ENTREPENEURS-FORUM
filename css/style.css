@@ -15114,3 +15114,17 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   height: 100vh; /* Or a fixed height if preferred */
   overflow: auto; /* Ensure scrolling if needed */
 }
+
+@media (max-width: 991.98px) {
+  .form-half {
+    width: 100%;
+  }
+
+  .half-container {
+    width: 100%;
+  }
+
+  .my-container {
+    flex-direction: column;
+  }
+}
