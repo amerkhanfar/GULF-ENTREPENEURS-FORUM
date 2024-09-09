@@ -15081,3 +15081,36 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 .box-counter-main div {
   color: rgb(85, 75, 118);
 }
+
+.my-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-top: 50px;
+}
+
+.my-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.half-container {
+  width: 60%;
+}
+
+.half-container div {
+  margin-bottom: 30px;
+}
+
+.form-half {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Or a fixed height if preferred */
+  overflow: auto; /* Ensure scrolling if needed */
+}
