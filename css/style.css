@@ -5468,8 +5468,8 @@ textarea.form-input {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 270px;
-  min-height: 208px;
+  max-width: 180px;
+  min-height: 118px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
