@@ -7442,6 +7442,7 @@ html.tablet .ui-to-top {
   transition: 0.3s;
   background-color: #ffffff;
   box-shadow: 0 0 22px -4px rgba(0, 0, 0, 0.17);
+  z-index: 500000;
 }
 
 .rd-navbar-fixed .rd-navbar-collapse.active {
@@ -15050,9 +15051,6 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
-  .rd-navbar-fixed .rd-navbar-fixed-element-1 {
-    display: none;
   }
 }
 
