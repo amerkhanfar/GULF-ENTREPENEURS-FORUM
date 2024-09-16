@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const sponsorForm = document.querySelector("#sponsor");
   if (sponsorForm) {
     sponsorForm.addEventListener("submit", async (event) => {
-      // For now, using the same API for testing
-      handleSubmit(event, sponsorForm, "./submit.php"); 
+      // Handle sponsor form submission
+      await handleSubmit(event, sponsorForm, "Day1.json", "sponsor");
     });
   }
 
@@ -12,15 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const registerForm = document.querySelector("#register");
   if (registerForm) {
     registerForm.addEventListener("submit", async (event) => {
-      // For now, using the same API for testing
-      handleSubmit(event, registerForm, "./submit.php"); 
+      // Handle register form submission
+      await handleSubmit(event, registerForm, "Day2.json", "reg");
     });
   }
 
   // Common function to handle form submission with dynamic API endpoint
-  async function handleSubmit(event, form, apiUrl) {
+  async function handleSubmit(event, form, endpoint, formType) {
     if (!form.checkValidity()) {
-      event.preventDefault(); 
+      event.preventDefault();
       alert("Please fill in all required fields.");
       return;
     }
@@ -29,20 +29,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Collect form data
     const formData = new FormData(form);
-    const data = {};
+    const fields = {};
     formData.forEach((value, key) => {
-      data[key] = value;
+      fields[key] = value;
     });
 
+    // Create the data structure as specified
+    const data = {
+      event: "gef",
+      form: formType,
+      fields: fields,
+    };
+
+    // Print JSON data to the console
+    console.log("Posting JSON data:", JSON.stringify(data));
+
     try {
-      // Send data to dynamic API endpoint
-      const response = await fetch(apiUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      // Send data to Firebase
+      const response = await fetch(
+        `https://sdg-signture-default-rtdb.firebaseio.com/${endpoint}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
         },
-        body: JSON.stringify(data),
-      });
+      );
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
