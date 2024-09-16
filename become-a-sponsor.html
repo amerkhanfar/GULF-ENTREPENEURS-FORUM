@@ -560,7 +560,7 @@
 
           <div class="form-half">
             <div style="position: sticky; top: 0">
-              <form class="rd-form rd-mailform rd-form-centered">
+              <form class="rd-form rd-mailform rd-form-centered" id="sponsor">
                 <h4 style="margin-bottom: 10px">Become A Sponsor</h4>
                 <div class="form-wrap">
                   <label class="form-label" for="contact-name">Full Name</label>
@@ -579,35 +579,35 @@
                   <input
                     class="form-input"
                     id="contact-email"
-                    type="email"
-                    name="email"
-                    data-constraints="@Required @Email"
-                  />
-                </div>
-
-                <div class="form-wrap">
-                  <label class="form-label" for="contact-name"
-                    >Company Name</label
-                  >
-                  <input
-                    class="form-input"
-                    id="contact-name"
-                    type="text"
-                    name="name"
+                    type="tel"
+                    name="phone"
                     data-constraints="@Required"
                   />
                 </div>
 
                 <div class="form-wrap">
-                  <label class="form-label" for="contact-email"
+                  <label class="form-label" for="contact-phone"
+                    >Company Name</label
+                  >
+                  <input
+                    class="form-input"
+                    id="contact-phone"
+                    type="text"
+                    name="company"
+                    data-constraints="@Required"
+                  />
+                </div>
+
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-company"
                     >Company Website (Optional)</label
                   >
                   <input
                     class="form-input"
-                    id="contact-email"
-                    type="email"
-                    name="email"
-                    data-constraints="@Required @Email"
+                    id="contact-company"
+                    type="text"
+                    name="website"
+                    data-constraints="@Required"
                   />
                 </div>
 
@@ -618,7 +618,7 @@
                     id="contact-package"
                   >
                     <option value="" disabled selected>Choose A Package</option>
-                    <option value="main sponsor">Main Sponsor</option>
+                    <option value="main">Main Sponsor</option>
                     <option value="Diamond">Diamond Sponsor</option>
                     <option value="platinum">Platinum Sponsor</option>
                     <option value="gold">Gold Sponsor</option>
@@ -736,6 +736,8 @@
         </defs>
       </svg>
     </div>
+
+    <script src="js/submitForm.js"></script>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
   </body>

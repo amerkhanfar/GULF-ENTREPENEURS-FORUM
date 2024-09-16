@@ -523,7 +523,7 @@
 
           <div class="form-half">
             <div style="position: sticky; top: 0">
-              <form class="rd-form rd-mailform rd-form-centered">
+              <form class="rd-form rd-mailform rd-form-centered" id="sponsor">
                 <h4 style="margin-bottom: 10px; text-align: center">
                   تقديم طلب الرعاية
                 </h4>
@@ -538,39 +538,38 @@
                   />
                 </div>
                 <div class="form-wrap">
-                  <label class="form-label" for="contact-email"
+                  <label class="form-label" for="contact-phone"
                     >رقم الهاتف</label
                   >
                   <input
                     class="form-input"
-                    id="contact-email"
-                    type="email"
-                    name="email"
-                    data-constraints="@Required @Email"
+                    id="contact-phone"
+                    type="tel"
+                    name="phone"
                   />
                 </div>
 
                 <div class="form-wrap">
-                  <label class="form-label" for="contact-name">الشركة</label>
+                  <label class="form-label" for="contact-company">الشركة</label>
                   <input
                     class="form-input"
-                    id="contact-name"
+                    id="contact-company"
                     type="text"
-                    name="name"
+                    name="company"
                     data-constraints="@Required"
                   />
                 </div>
 
                 <div class="form-wrap">
-                  <label class="form-label" for="contact-email"
+                  <label class="form-label" for="contact-website"
                     >الموقع الالكتروني للشركة (اختياري)</label
                   >
                   <input
                     class="form-input"
-                    id="contact-email"
-                    type="email"
-                    name="email"
-                    data-constraints="@Required @Email"
+                    id="contact-website"
+                    type="text"
+                    name="website"
+                    data-constraints="@Required"
                   />
                 </div>
 
@@ -581,8 +580,8 @@
                     id="contact-package"
                   >
                     <option value="" disabled selected>حزمة الرعاية</option>
-                    <option value="main sponsor">الراعي الرئيسي</option>
-                    <option value="Diamond">الراعي الماسي</option>
+                    <option value="main">الراعي الرئيسي</option>
+                    <option value="diamond">الراعي الماسي</option>
                     <option value="platinum">الراعي البلاتيني</option>
                     <option value="gold">الراعي الذهبي</option>
                     <option value="silver">الراعي الفضي</option>
@@ -708,6 +707,7 @@
         </defs>
       </svg>
     </div>
+    <script src="js/submitForm.js"></script>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
   </body>
