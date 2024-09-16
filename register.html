@@ -221,6 +221,7 @@
                         type="text"
                         name="name"
                         data-constraints="@Required"
+                        required
                       />
                     </div>
                   </div>
@@ -235,6 +236,7 @@
                         type="email"
                         name="email"
                         data-constraints="@Required @Email"
+                        required
                       />
                     </div>
                   </div>
@@ -248,6 +250,7 @@
                         id="contact-phone"
                         type="tel"
                         name="phone"
+                        required
                       />
                     </div>
                   </div>
@@ -262,6 +265,7 @@
                         id="contact-country"
                         type="text"
                         name="country"
+                        required
                       />
                     </div>
                   </div>
@@ -276,6 +280,7 @@
                         id="contact-company"
                         type="text"
                         name="company"
+                        required
                       />
                     </div>
                   </div>
@@ -290,12 +295,18 @@
                         id="contact-job"
                         type="text"
                         name="job"
+                        required
                       />
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="form-wrap">
-                      <select class="form-input" name="attending" id="aaaa">
+                      <select
+                        class="form-input"
+                        name="attending"
+                        id="aaaa"
+                        required
+                      >
                         <option value="" disabled selected>
                           You Are Attending As:
                         </option>
@@ -327,6 +338,7 @@
                         class="form-input"
                         name="interest"
                         id="contact-interest"
+                        required
                       >
                         <option value="" disabled selected>
                           Area Of Interest
