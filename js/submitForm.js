@@ -38,24 +38,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const data = {
       event: "gef",
       form: formType,
-      fields: fields,
+      fields,
     };
 
     // Print JSON data to the console
     console.log("Posting JSON data:", JSON.stringify(data));
 
     try {
-      // Send data to Firebase
-      const response = await fetch(
-        `https://sdg-signture-default-rtdb.firebaseio.com/${endpoint}`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
+      // Send data to the specified API endpoint with a Bearer token
+      const response = await fetch("https://app.oplus.dev/api/v1/entries", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization":
+            "Bearer 2|4ugZh0cevSwEfQgDG4ATvf9otHF01xrlFJ7twNIjc885be21", // Token with Bearer prefix
         },
-      );
+        body: JSON.stringify(data), // Ensure data is sent as JSON string
+      });
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
