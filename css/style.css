@@ -5474,7 +5474,7 @@ textarea.form-input {
   margin-left: auto;
   margin-right: auto;
   padding: 30px;
-  background-color: #ffffff;
+
   opacity: 1;
 }
 
@@ -12967,6 +12967,21 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   animation: fadeBoth 6s infinite;
 }
 
+.purple-gradient:before {
+  background-image: -webkit-linear-gradient(left, #554b76 0%, #554b76 100%);
+  background-image: linear-gradient(to top, #554b76 0%, #554b76 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF822EA8', endColorstr='#FFD90E90', GradientType=1);
+}
+
+.purple-gradient:after {
+  background-image: -webkit-linear-gradient(left, #554b76 0%, #554b76 100%);
+  background-image: linear-gradient(to top, #554b76 0%, #554b76 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD90E90', endColorstr='#FF822EA8', GradientType=1);
+  animation: fadeBoth 6s infinite;
+}
+
 @keyframes fadeBoth {
   0%,
   100% {
@@ -15013,7 +15028,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 .swwiper {
-  height: 100vh;
+  height: 70vh;
 }
 
 .social-container {
@@ -15125,4 +15140,14 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   .my-container {
     flex-direction: column;
   }
+}
+
+.sponsor-ribbon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

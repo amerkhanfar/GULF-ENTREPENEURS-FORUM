@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (sponsorForm) {
     sponsorForm.addEventListener("submit", async (event) => {
       // Handle sponsor form submission
-      await handleSubmit(event, sponsorForm, "Day1.json", "sponsor");
+      await handleSubmit(event, sponsorForm, "Day1.json", "sponsors");
     });
   }
 
@@ -62,7 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const result = await response.json();
       console.log("Form submitted successfully:", result);
-      alert("Your message has been sent successfully!");
+      alert(
+        "Your submission has been received! You will receive a confirmation email soon.",
+      );
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("There was an error sending your message. Please try again.");
