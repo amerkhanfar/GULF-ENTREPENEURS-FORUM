@@ -15233,6 +15233,32 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   text-transform: uppercase;
 }
 
+.three-sponsors-item {
+  width: 38%;
+  display: flex;
+  color: black;
+  height: 100%;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.three-sponsors-item p {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  color: rgb(85, 75, 118) !important;
+  font-size: 13px;
+  font-family: "Almarai";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 #partners {
   height: 18vh;
   display: block;
@@ -15270,7 +15296,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   }
 
   .sponsor-item {
-    width: 60%;
+    width: 40%;
   }
 
   .sponsor-item p {
@@ -15278,10 +15304,30 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   }
 
   .sponsors-item {
-    width: 70%;
+    width: 100%;
   }
 
   .sponsors-item p {
     font-size: 16px;
   }
+
+  .three-sponsors-item {
+    width: 100%;
+  }
+
+  .three-sponsors-item p {
+    font-size: 16px;
+  }
+}
+
+.thank-you {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  color: #554b76;
 }

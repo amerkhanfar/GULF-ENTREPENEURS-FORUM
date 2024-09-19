@@ -27,6 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     event.preventDefault();
 
+    // Disable the submit button for 5 seconds
+    const submitButton = form.querySelector("button[type='submit']");
+    submitButton.disabled = true;
+
+    // Re-enable the submit button after 5 seconds
+    setTimeout(() => {
+      submitButton.disabled = false;
+    }, 5000);
+
     // Collect form data
     const formData = new FormData(form);
     const fields = {};
@@ -62,9 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const result = await response.json();
       console.log("Form submitted successfully:", result);
-      alert(
-        "Your submission has been received! You will receive a confirmation email soon.",
-      );
+
+      // Redirect to thanks.html after successful submission
+      window.location.href = "thanks.html";
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("There was an error sending your message. Please try again.");
