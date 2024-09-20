@@ -19,8 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Common function to handle form submission with dynamic API endpoint
   async function handleSubmit(event, form, endpoint, formType) {
+    // Validate the "name" field to ensure it contains only English characters
+    const nameField = form.querySelector("input[name='name']");
+    const englishPattern = /^[A-Za-z\s]+$/;
+
+    if (nameField && !englishPattern.test(nameField.value)) {
+      alert("Name must be in English For Badge Printing");
+      return; // Prevent form submission if validation fails
+    }
+
     if (!form.checkValidity()) {
-      event.preventDefault();
       alert("Please fill in all required fields.");
       return;
     }
