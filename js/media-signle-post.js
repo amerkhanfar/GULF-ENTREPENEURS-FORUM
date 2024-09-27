@@ -1,8 +1,9 @@
+import { _SERVER_URI ,_TOKEN} from "./API_config.js";
 document.addEventListener("DOMContentLoaded", function() {
     const singleNewsId = new URLSearchParams(window.location.search).get('id');
-    const singleNewsApiUrl = `https://app.oplus.dev/api/v1/post/${singleNewsId}`;
-    const latestNewsApiUrl = 'https://app.oplus.dev/api/v1/gef/news/posts';
-    const bearerToken = '4|eJ1so9HdGTHPOzYkso2TBb04B1YxJNl294zHyIzFb446e2e9';
+    const singleNewsApiUrl = `${_SERVER_URI}/api/v1/post/${singleNewsId}`;
+    const latestNewsApiUrl = `${_SERVER_URI}/api/v1/gef/news/posts`;
+    const bearerToken = _TOKEN;
 
     // Fetch the single news item based on the ID in the URL
     fetch(singleNewsApiUrl, {
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('single-news-author').innerHTML = data.author.en;
       document.getElementById('single-news-date').innerHTML = new Date(data.published_at).toLocaleDateString();
       if (data.featured_image) {
-        document.getElementById('single-news-image').src = data.featured_image;
+        document.getElementById('single-news-image').src =   _SERVER_URI+'/storage/'+data.featured_image;;
       }
     })
     .catch(error => {
@@ -49,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
           <div class="post-mini">
             <div class="unit">
               <div class="unit-left">
-                <img src="${news.featured_image}" alt="News image" width="59" height="59"/>
+                <img src="${  _SERVER_URI+'/storage/'+news.featured_image}" alt="News image" width="59" height="59"/>
               </div>
               <div class="unit-body">
                 <p class="post-mini-author">by <a href="#">${news.author.en}</a></p>

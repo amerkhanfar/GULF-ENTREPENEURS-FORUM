@@ -1,8 +1,9 @@
+import { _SERVER_URI,_TOKEN } from "./API_config.js";
 document.addEventListener("DOMContentLoaded", function () {
   const singleNewsId = new URLSearchParams(window.location.search).get("id");
-  const singleNewsApiUrl = `https://app.oplus.dev/api/v1/post/${singleNewsId}`;
-  const latestNewsApiUrl = "https://app.oplus.dev/api/v1/gef/news/posts";
-  const bearerToken = "4|eJ1so9HdGTHPOzYkso2TBb04B1YxJNl294zHyIzFb446e2e9";
+  const singleNewsApiUrl = `${_SERVER_URI}/api/v1/post/${singleNewsId}`;
+  const latestNewsApiUrl = `${_SERVER_URI}/api/v1/gef/news/posts`;
+  const bearerToken = _TOKEN;
 
   // Fetch the single news item based on the ID in the URL (Arabic)
   fetch(singleNewsApiUrl, {
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ).toLocaleDateString("ar-EG");
       if (data.featured_image) {
         document.getElementById("single-news-image-ar").src =
-          data.featured_image;
+          _SERVER_URI+'/storage/'+data.featured_image;
       }
     })
     .catch((error) => {
@@ -56,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="unit">
              <a href="single-news-ar.html?id=${news.id}" style='text-align: right;'>
               <div class="unit-left">
-                <img src="${news.featured_image}" alt="News image" width="59" height="59"/>
+                <img src="${_SERVER_URI+"/storage/"+news.featured_image}" alt="News image" width="59" height="59"/>
               </div>
               </a>
               <div class="unit-body" style='text-align: right;'>

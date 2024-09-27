@@ -1,6 +1,7 @@
+import { _SERVER_URI ,_TOKEN} from "./API_config.js";
 document.addEventListener("DOMContentLoaded", function () {
-  const token = "4|eJ1so9HdGTHPOzYkso2TBb04B1YxJNl294zHyIzFb446e2e9";
-  const apiUrl = "https://app.oplus.dev/api/v1/gef/news/posts";
+  const token = _TOKEN;
+  const apiUrl = `${_SERVER_URI}/api/v1/gef/news/posts`;
 
   // Fetch the news from the API
   fetch(apiUrl, {
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }" data-triangle=".news-img-overlay">
                   <span class="news-img-overlay"></span>
                   <div style='width:370px;height:284px; background-size: cover; background-position: center; background-image:url("${
-                    article.featured_image
+                    _SERVER_URI+'/storage/'+article.featured_image
                   }")'></div>
                 </a>
               </div>

@@ -1,3 +1,4 @@
+import { _SERVER_URI, _TOKEN } from "./API_config.js";
 document.addEventListener("DOMContentLoaded", () => {
   // Handle sponsor form submission
   const sponsorForm = document.querySelector("#sponsor");
@@ -63,12 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       // Send data to the specified API endpoint with a Bearer token
-      const response = await fetch("https://app.oplus.dev/api/v1/entries", {
+      const response = await fetch(`${_SERVER_URI}/api/v1/entries`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           "Authorization":
-            "Bearer 2|4ugZh0cevSwEfQgDG4ATvf9otHF01xrlFJ7twNIjc885be21", // Token with Bearer prefix
+            `Bearer ${_TOKEN}`, // Token with Bearer prefix
         },
         body: JSON.stringify(data), // Ensure data is sent as JSON string
       });
