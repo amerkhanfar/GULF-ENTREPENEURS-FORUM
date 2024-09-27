@@ -198,13 +198,25 @@
       <!-- Section Our News-->
 <section class="section section-lg bg-default">
   <div class="container">
-    <div class="row row-50">
-      <!-- Single News Section -->
+    <div class="row row-50"><!-- Latest News Section (Arabic) -->
+      <div class="col-lg-5 col-xl-4">
+        <div class="row row-30">
+          <div class="col-sm-7 col-md-6 col-lg-12">
+            <div class="post-aside">
+              <h5 class="post-aside-title">آخر الأخبار</h5>
+              <div class="post-aside-content" id="latest-news-ar">
+                <p id="latest-news-loading-ar" class="loading">جارٍ تحميل الأخبار...</p> <!-- Loading indicator in Arabic -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Single News Section (Arabic) -->
       <div class="col-lg-7 col-xl-8">
         <article class="post-single">
           <div class="post-single-img">
             <img
-              id="single-news-image"
+              id="single-news-image-ar"
               src=""
               alt="Loading image..."
               width="770"
@@ -213,34 +225,23 @@
           </div>
           <ul class="post-single-meta">
             <li class="post-single-meta-author">
-              <span>by</span> <a id="single-news-author" href="#"></a>
+              <span>بواسطة</span> <a id="single-news-author-ar" href="#"></a>
             </li>
             <li class="post-single-meta-date">
-              <time id="single-news-date" datetime=""></time>
+              <time id="single-news-date-ar" datetime=""></time>
             </li>
           </ul>
-          <h3 class="post-single-title" id="single-news-title"></h3>
-          <p id="single-news-content"></p>
-          <p id="single-news-loading" class="loading">Loading...</p> <!-- Loading indicator -->
+          <h3 class="post-single-title" id="single-news-title-ar"></h3>
+          <p id="single-news-content-ar"></p>
+          <p id="single-news-loading-ar" class="loading">جارٍ التحميل...</p> <!-- Loading indicator in Arabic -->
         </article>
       </div>
 
-      <!-- Latest News Section -->
-      <div class="col-lg-5 col-xl-4">
-        <div class="row row-30">
-          <div class="col-sm-7 col-md-6 col-lg-12">
-            <div class="post-aside">
-              <h5 class="post-aside-title">Latest Posts</h5>
-              <div class="post-aside-content" id="latest-news">
-                <p id="latest-news-loading" class="loading">Loading latest news...</p> <!-- Loading indicator -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
   </div>
 </section>
+
       <!-- Section Pre Footer-->
       <section class="section section-lg">
         <div class="container">
@@ -356,6 +357,6 @@
     </div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/media-signle-post.js"></script>
+    <script src="js/media-signle-post-ar.js"></script>
   </body>
 </html>
