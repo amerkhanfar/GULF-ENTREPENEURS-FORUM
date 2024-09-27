@@ -15332,3 +15332,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   gap: 30px;
   color: #554b76;
 }
+
+.attachment__name {
+  display: none;
+}
