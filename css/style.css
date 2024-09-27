@@ -15333,6 +15333,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   color: #554b76;
 }
 
-.attachment__name {
+.attachment__name,
+.attachment__caption {
   display: none;
 }
