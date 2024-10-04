@@ -34,6 +34,12 @@ function renderSession(session, parentDiv) {
       .toString(36)
       .substring(7)}`;
 
+    // Process the description to add line breaks
+    const description =
+      session.description.ar !== "Null"
+        ? session.description.ar.replace(/(?<!H\.E)(\.|:)(?!\w)/g, "<br>")
+        : "No description available";
+
     // Create card for panel discussion sessions
 
     sessionDiv = `
@@ -62,11 +68,7 @@ function renderSession(session, parentDiv) {
                 </div>
                 <div class="collapse" id="${bodyId}" role="tabpanel" aria-labelledby="${headId}" style="text-align: right">
                     <div class="card-body">
-                        <p style='direction: rtl'> ${
-                          session.description.ar !== "Null"
-                            ? session.description.ar
-                            : "No description available"
-                        }</p>
+                        <p style='direction: rtl'> ${description}</p>
                     </div>
                 </div>
             </article>`;
