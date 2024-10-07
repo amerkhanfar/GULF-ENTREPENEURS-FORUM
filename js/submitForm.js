@@ -68,8 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization":
-            `Bearer ${_TOKEN}`, // Token with Bearer prefix
+          "Authorization": `Bearer ${_TOKEN}`, // Token with Bearer prefix
         },
         body: JSON.stringify(data), // Ensure data is sent as JSON string
       });
@@ -81,8 +80,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const result = await response.json();
       console.log("Form submitted successfully:", result);
 
-      // Redirect to thanks.html after successful submission
-      window.location.href = "thanks.html";
+      // Redirect based on the current URL
+      const currentUrl = window.location.href;
+      if (currentUrl.includes("-ar.html")) {
+        // Redirect to Arabic thanks page for Arabic versions
+        window.location.href = "thanks-ar.html";
+      } else {
+        // Redirect to default thanks page for English versions
+        window.location.href = "thanks.html";
+      }
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("There was an error sending your message. Please try again.");
