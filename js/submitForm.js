@@ -91,7 +91,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("There was an error sending your message. Please try again.");
+
+      alert(
+        "You are already registered for the conference. Thank you for your interest!",
+      );
     }
   }
 });
