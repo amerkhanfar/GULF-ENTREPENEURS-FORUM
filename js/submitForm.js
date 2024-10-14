@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error submitting form:", error);
 
       alert(
-        "You are already registered for the conference. Thank you for your interest!",
+        "The email address you provided has already been registered for the event!",
       );
     }
   }
