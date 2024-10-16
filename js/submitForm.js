@@ -1,5 +1,31 @@
 import { _SERVER_URI, _TOKEN } from "./API_config.js";
+
 document.addEventListener("DOMContentLoaded", () => {
+  function showAlert(message) {
+    // Set the alert message
+    alertDiv.innerHTML = `
+    <button class="x">x</button>
+    Error: <br />
+    ${message}
+  `;
+
+    // Show the 'over' and 'alert' divs by adding the 'show' class
+    overDiv.classList.add("show");
+    alertDiv.classList.add("show");
+    const closeButton = document.querySelector(".x");
+    // Event listener for the close button
+    if (closeButton) {
+      closeButton.addEventListener("click", () => {
+        // Remove the 'show' class from 'over' and 'alert' divs
+        overDiv.classList.remove("show");
+        alertDiv.classList.remove("show");
+      });
+    }
+  }
+  // Select the elements with class 'over' and 'alert'
+  const overDiv = document.querySelector(".over");
+  const alertDiv = document.querySelector(".alert");
+
   // Handle sponsor form submission
   const sponsorForm = document.querySelector("#sponsor");
   if (sponsorForm) {
@@ -25,12 +51,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const englishPattern = /^[A-Za-z\s]+$/;
 
     if (nameField && !englishPattern.test(nameField.value)) {
-      alert("Name must be in English For Badge Printing");
+      // alert("Name must be in English For Badge Printing");
+      showAlert("Name must be in English For Badge Printing");
       return; // Prevent form submission if validation fails
     }
 
     if (!form.checkValidity()) {
-      alert("Please fill in all required fields.");
+      showAlert("Please fill in all required fields.");
+      // alert("Please fill in all required fields.");
       return;
     }
 
@@ -92,9 +120,13 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (error) {
       console.error("Error submitting form:", error);
 
-      alert(
+      showAlert(
         "The email address you provided has already been registered for the event!",
       );
+
+      // Show the 'over' and 'alert' divs by adding the 'show' class
+      // overDiv.classList.add("show");
+      // alertDiv.classList.add("show");
     }
   }
 });

@@ -15274,6 +15274,22 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   bottom: 0;
 }
 
+.alert {
+  width: 20vw;
+  height: 20vh;
+  position: fixed;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 21;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
 @media (max-width: 992px) {
   .sponsor-item {
     flex-direction: column;
@@ -15319,6 +15335,10 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
   .three-sponsors-item p {
     font-size: 16px;
   }
+  .alert {
+    width: 70vw;
+    height: 50vh;
+  }
 }
 
 .thank-you {
@@ -15336,4 +15356,34 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 .attachment__name,
 .attachment__caption {
   display: none;
+}
+
+.over {
+  position: fixed;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.x {
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.over.show {
+  display: block;
+}
+
+.alert.show {
+  display: flex;
 }

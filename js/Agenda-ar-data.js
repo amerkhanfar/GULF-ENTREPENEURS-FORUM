@@ -21,7 +21,7 @@ function renderSession(session, parentDiv) {
                             <use xlink:href="images/svg/sprite.svg#clock"></use>
                         </svg>
                     </div>
-                    <span class="schedule-classic-time" style="text-align: right"> ${endTime} من الساعة ${startTime}  الى الساعة </span>
+                    <span class="schedule-classic-time" style="text-align: right; letter-spacing:0"> ${endTime} من الساعة ${startTime}  الى الساعة </span>
                     <span class="schedule-classic-title heading-4" style="text-align: right">${title}</span>
                 </div>
             </div>`;
@@ -57,7 +57,7 @@ function renderSession(session, parentDiv) {
                                 <span class="unit unit-spacing-md align-items-center d-block d-md-flex">
                                     <span class="unit-body">
                                         <span class="schedule-classic-content"> 
-                                            <span class="schedule-classic-time" style="text-align: right">   ${endTime} من الساعة ${startTime}  الى الساعة </span>
+                                            <span class="schedule-classic-time" style="text-align: right; letter-spacing:0">   ${endTime} من الساعة ${startTime}  الى الساعة </span>
                                             <span class="schedule-classic-title heading-4" style="text-align: right">${title}</span>
                                         </span>
                                     </span>
