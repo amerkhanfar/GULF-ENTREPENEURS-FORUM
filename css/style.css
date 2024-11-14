@@ -15387,3 +15387,83 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 .alert.show {
   display: flex;
 }
+
+.delay-container {
+  position: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  height: 25vh;
+  right: 10px;
+  bottom: 10px;
+  z-index: 300;
+  border-radius: 3px;
+  background: rgb(85, 75, 118);
+  background-size: cover;
+}
+
+.delay {
+  text-align: right;
+  width: 80%;
+  height: 80%;
+  letter-spacing: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  direction: rtl;
+}
+
+.delay-body {
+  color: white;
+}
+
+.delay-en {
+  text-align: left;
+  width: 80%;
+  height: 80%;
+  letter-spacing: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  direction: ltr;
+}
+
+.delay-close {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.delay-close button {
+  background-color: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .delay-container {
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 101vw;
+    height: 25vh;
+    left: 0;
+    bottom: 0;
+    z-index: 300;
+    border-radius: 3px;
+    background: rgb(85, 75, 118);
+    background-size: cover;
+  }
+  .delay-close {
+    position: absolute;
+    left: 3px;
+    top: 20px;
+  }
+}

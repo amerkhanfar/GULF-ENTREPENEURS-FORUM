@@ -1,4 +1,50 @@
 "use strict";
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if the URL is the index ("/") or contains "ar"
+  const isArabicPage =
+    window.location.pathname === "/" ||
+    window.location.pathname.includes("ar") ||
+    window.location.pathname === "/index.html";
+
+  // Create the container div
+  const delayContainer = document.createElement("div");
+  delayContainer.className = "delay-container";
+
+  // Set inner HTML based on the page type
+  if (isArabicPage) {
+    delayContainer.innerHTML = `
+          <div class="delay">
+              <div class="delay-header">
+                  <h6 style="letter-spacing: 0px; color:white"> اعلان هام:</h6>
+              </div>
+              <div class="delay-body">
+تم تأجيل الموعد المقرر للمنتدى، وسيتم الإعلان عن الموعد الجديد قريباً.              </div>
+              <div class="delay-close">
+                  <button onclick="this.parentElement.parentElement.parentElement.remove()">      <img src="images/x-close.png" alt="" width="20" height="20" /></button>
+              </div>
+          </div>
+      `;
+  } else {
+    delayContainer.innerHTML = `
+          <div class="delay-en">
+              <div class="delay-header">
+                  <h6 style="letter-spacing: 0px; color:white">*Important Update: *
+</h6>
+              </div>
+              <div class="delay-body" >
+                  The event has been postponed. A new date will be announced soon - stay tuned!
+              </div>
+              <div class="delay-close">
+                  <button onclick="this.parentElement.parentElement.parentElement.remove()"> <img src="images/x-close.png" alt="" width="20" height="20" /></button>
+              </div>
+          </div>
+      `;
+  }
+
+  // Append it to the body
+  document.body.appendChild(delayContainer);
+});
 (function () {
   // Global variables
   var userAgent = navigator.userAgent.toLowerCase(),
